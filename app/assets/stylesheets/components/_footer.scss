@@ -21,32 +21,42 @@
   font-family: 'Noto Sans Mono', monospace;
   font-style: normal;
   font-weight: 263;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
   text-transform: capitalize;
   color: #261824;
-
 }
 
-.header {
+.left-title{
+  text-align: left;
+  font-family: 'Noto Sans Mono', monospace;
+  font-style: normal;
+  font-weight: 263;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.right-title{
+  font-family: 'Noto Sans Mono', monospace;
+  font-style: normal;
+  font-weight: 263;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.footer {
   width: 100%;
   height: 70px;
-  border-bottom: 0.5px solid #261824;
+  border-top: 0.5px solid #261824;
   text-align: center;
-  position: fixed;
-  margin-top: -18px;
-
-
-  // .logo {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   font-size: 32px;
-  //   font-weight: 100;
-  //   padding: 26px;
-  //   border-right: 1px solid black;
-  // }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  // flex-shrink: 0;
 }
 
 .link {
@@ -55,7 +65,7 @@
   margin: 15px 25px;
   position: relative;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #261824;
   font-weight: 800;
   font-size: 24px;
@@ -69,7 +79,9 @@
     left: 0;
     opacity: 0;
     transition: all 300ms;
+    color: #261824;
   }
+
   &:hover {
     .bar {
       opacity: 1;
@@ -77,4 +89,8 @@
       color: #261824;
     }
   }
+}
+
+a:hover {
+  color:#261824;
 }
