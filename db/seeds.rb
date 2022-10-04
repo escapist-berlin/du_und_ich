@@ -41,3 +41,59 @@ parsedSubcategories.each_with_index do |subcategory, index|
     category_id: subcategory[:category]
   )
 end
+
+puts ""
+puts "Creating phrases..."
+puts ""
+
+phrasesTable = Roo::Spreadsheet.open('lib/seeds/phrases.xlsx')
+parsedPhrases = phrasesTable.parse(phrase: 'PHRASE', subcategory: 'SUBCATEGORY')
+
+# {:phrase=>"Groß-Berlin", :ads=>19, :subcategory=>1, :category=>1}
+# {:phrase=>"(Jude)", :ads=>26, :subcategory=>1, :category=>1}
+# {:phrase=>"italienischer Typ", :ads=>28, :subcategory=>1, :category=>1}
+# {:phrase=>"Syrien", :ads=>35, :subcategory=>1, :category=>1}
+# {:phrase=>"Ausländer", :ads=>"53, 582", :subcategory=>1, :category=>1}
+
+parsedPhrases.each_with_index do |phrase, index|
+  puts "The phrase # #{index + 1} created ✅"
+  Phrase.create(
+    title: phrase[:phrase],
+    subcategory_id: phrase[:subcategory]
+  )
+end
+
+puts ""
+puts "Creating connections..."
+puts ""
+
+parsedConnections = phrasesTable.parse(id: 'ID', ads: 'ADS')
+connectionCount = 0
+
+parsedConnections.each do |connection|
+
+  if connection[:ads].class == String
+
+    adIds = connection[:ads].split(", ").map(&:to_i)
+    adIds.each do |id|
+      Connection.create(
+        phrase_id: connection[:id],
+        ad_id: id
+      )
+
+      connectionCount += 1
+      puts "The connection # #{connectionCount} created ✅"
+    end
+
+  else
+
+    Connection.create(
+      phrase_id: connection[:id],
+      ad_id: connection[:ads]
+    )
+
+    connectionCount += 1
+    puts "The connection # #{connectionCount} created ✅"
+  end
+
+end
