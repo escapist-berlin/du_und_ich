@@ -49,12 +49,6 @@ puts ""
 phrasesTable = Roo::Spreadsheet.open('lib/seeds/phrases.xlsx')
 parsedPhrases = phrasesTable.parse(phrase: 'PHRASE', subcategory: 'SUBCATEGORY')
 
-# {:phrase=>"Groß-Berlin", :ads=>19, :subcategory=>1, :category=>1}
-# {:phrase=>"(Jude)", :ads=>26, :subcategory=>1, :category=>1}
-# {:phrase=>"italienischer Typ", :ads=>28, :subcategory=>1, :category=>1}
-# {:phrase=>"Syrien", :ads=>35, :subcategory=>1, :category=>1}
-# {:phrase=>"Ausländer", :ads=>"53, 582", :subcategory=>1, :category=>1}
-
 parsedPhrases.each_with_index do |phrase, index|
   puts "The phrase # #{index + 1} created ✅"
   Phrase.create(
@@ -71,6 +65,9 @@ parsedConnections = phrasesTable.parse(id: 'ID', ads: 'ADS')
 connectionCount = 0
 
 parsedConnections.each do |connection|
+
+  # If there are several ads with this phrase,
+  # make an array of ads nums and iterate through it
 
   if connection[:ads].class == String
 
