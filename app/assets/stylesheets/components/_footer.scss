@@ -26,6 +26,8 @@
   text-align: center;
   text-transform: capitalize;
   color: #261824;
+  margin-bottom: -19px;
+
 }
 
 .left-title{
@@ -36,6 +38,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: capitalize;
+  margin-bottom: -19px;
 }
 
 .right-title{
@@ -46,17 +49,20 @@
   line-height: 24px;
   text-align: right;
   text-transform: capitalize;
+  margin-bottom: -19px;
+
 }
 
 .footer {
   width: 100%;
-  height: 70px;
+  height: 48px;
   border-top: 0.5px solid #261824;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   // flex-shrink: 0;
+  background-color: #f9f9f9;
 }
 
 .link {
@@ -80,6 +86,7 @@
     opacity: 0;
     transition: all 300ms;
     color: #261824;
+    margin-bottom: -14px;
   }
 
   &:hover {
