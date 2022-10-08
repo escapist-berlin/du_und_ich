@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import RefreshContentController from "./refresh_content_controller"
+application.register("refresh-content", RefreshContentController)

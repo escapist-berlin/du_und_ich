@@ -19,11 +19,11 @@
   </head>
 
   <body>
-    <div class="d-flex flex-column min-vh-100">
+    <div data-controller="refresh-content" class="d-flex flex-column min-vh-100">
           <%=render("shared/navbar")%>
           <article class="flex-grow-1">
       <%= yield %>
-            </article>
+          </article>
           <%=render("shared/footer")%>
     </div>
   </body>
