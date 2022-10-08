@@ -1,5 +1,17 @@
 class AdsController < ApplicationController
   def index
     @ads = Ad.all
+
+    if params[:query].present?
+      @ads = @ads.where(decade: params[:query])
+      # raise
+    end
+
+    respond_to do |format|
+      format.html # Follow regular flow of Rails
+      # format.text { render partial: 'list.html', locals: { movies: @movies } }
+    end
+
   end
+
 end
