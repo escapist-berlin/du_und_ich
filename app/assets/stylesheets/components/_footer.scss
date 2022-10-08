@@ -63,6 +63,9 @@
   align-items: flex-end;
   // flex-shrink: 0;
   background-color: #f9f9f9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .link {
