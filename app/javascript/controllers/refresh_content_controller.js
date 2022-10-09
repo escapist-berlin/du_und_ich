@@ -13,18 +13,18 @@ export default class extends Controller {
     event.preventDefault()
 
     // adds query string to the url
-    window.location.href = `${window.location.origin + window.location.pathname}?query=${event.target.innerHTML}`
+    window.location.href = `${event.target.offsetParent.href}?query=${event.target.innerHTML}`
 
     // const url = `${this.contentTarget.attributes[0].baseURI}?query=${this.firstDecadeTarget.innerText}`
-    const url = window.location.href
+    // const url = window.location.href
 
-    // console.log(url)
+    // // console.log(url)
 
-    fetch(url, { headers: { 'Accept': 'text/plain' } })
-    .then(response => response.text())
-    .then((data) => {
-      console.log(data);
-    })
+    // fetch(url, { headers: { 'Accept': 'text/plain' } })
+    // .then(response => response.text())
+    // .then((data) => {
+    //   console.log(data);
+    // })
 
   }
 }
