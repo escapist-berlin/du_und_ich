@@ -1,8 +1,10 @@
 <div data-refresh-content-target="content" class="container">
   <% @ads.each do |ad| %>
+       <div class="adbody">
     <%= ad.content %>
     <br>
     <small>(<%= ad.decade %>)</small>
     <hr>
+      </div>
   <% end %>
 </div>
