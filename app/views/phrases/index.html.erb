@@ -1,11 +1,13 @@
 <div data-refresh-content-target="content" class="container">
 
   <div class="adbody">
-    <% @ads.each do |ad| %>
-      <%= ad.content %>
-      <br>
-      <small>(<%= ad.decade %>)</small>
-      <hr>
+    <% @phrases.each do |phrase| %>
+
+
+        <%= link_to phrase.title, ads_phrase_path(phrase)  %>
+
+        <br>
+
     <% end %>
   </div>
 
