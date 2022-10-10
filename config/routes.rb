@@ -6,9 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :ads, only: [:index]
 
-  resources :phrases, only: [:index, :show] do
-    member do
-      get :ads
-    end
-  end
+  resources :phrases, only: [:index]
 end
