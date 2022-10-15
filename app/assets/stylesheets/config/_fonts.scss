@@ -14,3 +14,16 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: "ABCDiatypeEdu";
+  src: font-url('ABCDiatypeEdu_Bold.woff') format('woff'),
+       font-url('ABCDiatypeEdu_Bold.woff2') format('woff2'),
+       font-url('ABCDiatypeEdu_Light.woff') format('woff'),
+       font-url('ABCDiatypeEdu_Light.woff2') format('woff2'),
+       font-url('ABCDiatypeEdu_Medium.woff') format('woff'),
+       font-url('ABCDiatypeEdu_Medium.woff2') format('woff2'),
+       font-url('ABCDiatypeEdu_Regular.woff') format('woff'),
+       font-url('ABCDiatypeEdu_Regular.woff2') format('woff2');
+}
+$my-font: "ABCDiatypeEdu";
