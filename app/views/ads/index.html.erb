@@ -1,21 +1,17 @@
 <div data-refresh-content-target="content" class="container">
  <div id="col">
     <% @ads.each do |ad| %>
-      <%# <div class="row"> %>
         <div class="adbody">
-          <%# <div class="column"> %>
             <%= ad.content %>
-          <%# </div> %>
           <br>
           <small>(<%= ad.decade %>)</small>
           <hr>
         </div>
-      <%# </div> %>
     <% end %>
  </div>
 </div>
 
-<%# <script>
+<script>
   // Get the elements with class="column"
   const elements = document.getElementsByClassName("adbody");
   // Declare a loop variable
@@ -55,7 +51,7 @@
       elements[i].style.columnCount = "6";
     }
   }
-</script> %>
+</script>
 
 <%# <script>
   const btn = document.getElementsByClassName('buttons');

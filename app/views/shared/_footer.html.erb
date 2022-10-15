@@ -38,7 +38,7 @@
   </div>
 </div>
 
-<div class="buttons">
+<%# <div class="buttons">
   <div class="view1">
     <button class="grid" onclick="listView()">1</button>
   </div>
@@ -52,4 +52,31 @@
     <button class="grid6" onclick="grid4View()">6</button>
   </div>
     <%# <div class="grid" onclick="gridView()"></div> %>
+<%# </div> %>
+
+<div class="buttons">
+  <button id="btn" class="grid" onclick="listView()"></button>
+  <button id="btn" class="grid2" onclick="gridView()">2</button>
+  <button id="btn"class="grid4" onclick="grid2View()">4</button>
+  <button id="btn" class="grid6" onclick="grid4View()">6</button>
 </div>
+
+<script>
+  const btn = document.getElementById('btn');
+
+  let index = 0;
+
+  const images = ["./images/grid1.svg",
+  "./images/grid2.svg",
+  "./images/grid4.svg",
+  "./images/grid6.svg",
+  ];
+
+  // const colors = ['salmon', 'green', 'blue', 'purple'];
+
+  btn.addEventListener('click', function onClick() {
+    btn.style.backgroundImage = images[index];
+
+    index = index >= images.length - 1 ? 0 : index + 1;
+  });
+</script>

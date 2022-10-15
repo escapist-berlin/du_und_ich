@@ -40,7 +40,8 @@
 .grid2 {
   height: 52px;
   width: 73px;
-  background: red;
+  // background: red;
+  background-image: url(grid2.svg);
   border: 0.5px solid #000000;
   color: #261824;
   cursor: pointer;
@@ -52,11 +53,6 @@
   margin-bottom: 80px;
   box-sizing: border-box;
 }
-
-// .view2 {
-//   background-image: url(assets/images/grid2.svg);
-//   background-size: cover;
-// }
 
 .grid4 {
   height: 52px;
