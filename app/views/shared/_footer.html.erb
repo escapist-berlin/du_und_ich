@@ -38,22 +38,6 @@
   </div>
 </div>
 
-<%# <div class="buttons">
-  <div class="view1">
-    <button class="grid" onclick="listView()">1</button>
-  </div>
-  <div class="view2"></div>
-    <button class="grid2" onclick="gridView()">2</button>
-  </div>
-  <div class="view4"></div>
-    <button class="grid4" onclick="grid2View()">4</button>
-  </div>
-  <div class="view6">
-    <button class="grid6" onclick="grid4View()">6</button>
-  </div>
-    <%# <div class="grid" onclick="gridView()"></div> %>
-<%# </div> %>
-
 <div class="buttons">
   <button id="btn" class="grid" onclick="listView()"></button>
   <button id="btn" class="grid2" onclick="gridView()"></button>
@@ -61,18 +45,19 @@
   <button id="btn" class="grid6" onclick="grid4View()"></button>
 </div>
 
+
+<%# one button changing backgroundColor %>
 <script>
   const btn = document.getElementById('btn');
 
   let index = 0;
 
-  const images = [ grid1.svg, grid2.svg, grid4.svg, grid6.svg,];
-
-  // const colors = ['salmon', 'green', 'blue', 'purple'];
+  const colors = ['salmon', 'green', 'blue', 'purple'];
 
   btn.addEventListener('click', function onClick() {
-    btn.style.backgroundImage = images[index];
+    btn.style.backgroundColor = colors[index];
+    btn.style.color = 'white';
 
-    index = index >= images.length - 1 ? 0 : index + 1;
+    index = index >= colors.length - 1 ? 0 : index + 1;
   });
 </script>
