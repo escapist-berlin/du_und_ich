@@ -57,7 +57,8 @@
 .grid4 {
   height: 52px;
   width: 73px;
-  background: blue;
+  // background: blue;
+  background-image: url(grid4.svg);
   border: 0.5px solid #000000;
   color: #261824;
   cursor: pointer;
@@ -73,7 +74,8 @@
 .grid6 {
   height: 52px;
   width: 73px;
-  background: yellow;
+  // background: yellow;
+  background-image: url(grid6.svg);
   border: 0.5px solid #000000;
   color: #261824;
   cursor: pointer;
