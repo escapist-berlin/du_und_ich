@@ -5,7 +5,7 @@
   </a>
   <div class="menu">
     <a href="#" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1921-1933</div>
+      <div class="title">1919-1933</div>
       <div class="bar"></div>
     </a>
     <a href="#" class="link decade" data-action="click->refresh-content#update">
@@ -32,23 +32,16 @@
       <div class="bar"></div>
     </a>
      <a href="#" class="link">
-      <div class="right-title">über dieses Projekt</div>
+      <div class="right-title" style="margin-right: 114px;">über dieses Projekt</div>
       <div class="bar"></div>
     </a>
   </div>
 </div>
 
-<%# <script>
-  let decades = document.querySelectorAll('.decade');
-
-
-  decades.forEach(decade => {
-    decade.addEventListener('click', function(event) {
-      // Stop the link from redirecting
-      event.preventDefault();
-
-      // Adds query string to the base url
-      window.location.href = `${window.location.origin + window.location.pathname}?query=${decade.innerText}`;
-    }, false);
-  })
-</script> %>
+<div class="buttons">
+  <div class="view1"><button class="grid" onclick="listView()">1</button></div>
+  <div class="view2"></div><button class="grid2" onclick="gridView()">2</button></div>
+  <div class="view4"></div><button class="grid4" onclick="grid2View()">4</button></div>
+  <div class="view6"><button class="grid6" onclick="grid4View()">6</button></div>
+    <%# <div class="grid" onclick="gridView()"></div> %>
+</div>
