@@ -7,7 +7,7 @@
 }
 
 .adbody {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
   font-weight: 263;
   font-size: 36px;
@@ -21,4 +21,25 @@
   margin: -12px;
   padding: 20px;
   margin-bottom: -4px;
+  width: 100vw;
 }
+
+#col::after {
+  column-count: 2;
+  border-right: 0.5px solid #261824 ;
+  column-rule-style: solid;
+  column-rule-width: 0.5px;
+  // column-rule: 0.5px solid;
+  margin: -12px;
+  // break-after: column;
+}
+
+
+// .column {
+//   column-fill: auto;
+//   float: left;
+//   // overflow: scroll;
+//   // display: grid;
+//   // grid-auto-flow: column;
+//   // gap: 5%;
+// }
