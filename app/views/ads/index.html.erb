@@ -1,12 +1,55 @@
 <div data-refresh-content-target="content" class="container">
-
-  <div class="adbody">
+ <div id="col">
     <% @ads.each do |ad| %>
-      <%= ad.content %>
-      <br>
-      <small>(<%= ad.decade %>)</small>
-      <hr>
+        <div class="adbody">
+            <%= ad.content %>
+          <br>
+          <small>(<%= ad.decade %>)</small>
+          <hr>
+        </div>
     <% end %>
-  </div>
-
+ </div>
 </div>
+
+<script>
+  // Get the elements with class="column"
+  const elements = document.getElementsByClassName("adbody");
+  // Declare a loop variable
+  let i;
+ // List 1 View
+  function listView() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "100%";
+    }
+  }
+  // Grid 2 View
+  function gridView() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "100%";
+      elements[i].style.fontSize = "24px";
+      elements[i].style.lineHeught = "32px";
+      elements[i].style.columnCount = "2";
+      elements[i].style.paddinRight = "0px";
+    }
+  }
+// Grid 4 View
+    function grid2View() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "100%";
+      elements[i].style.fontSize = "16px";
+      elements[i].style.lineHeught = "24px";
+      elements[i].style.columnCount = "4";
+    }
+  }
+// Grid 6 View
+   function grid4View() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "100%";
+      elements[i].style.fontSize = "12px";
+      elements[i].style.lineHeught = "20px";
+      elements[i].style.columnCount = "6";
+    }
+  }
+</script>
+
+

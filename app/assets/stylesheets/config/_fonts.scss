@@ -14,3 +14,32 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: "ABC Diatype Mono Variable Edu";
+  src: font-url('ABCDiatypeMonoVariableEdu.eot');
+  src: font-url('ABCDiatypeMonoVariableEdu.eot?#iefix') format('embedded-opentype'),
+       font-url('ABCDiatypeMonoVariableEdu.woff') format('woff'),
+       font-url('ABCDiatypeMonoVariableEdu.ttf') format('truetype')
+}
+$my-font: "ABC Diatype Mono Variable Edu";
+
+@font-face {
+  font-family: "ABC Diatype Semi-Mono Edu-Light";
+  src: font-url('ABCDiatypeSemi-MonoEdu-Light.eot');
+  src: font-url('ABCDiatypeSemi-MonoEdu-Light.eot?#iefix') format('embedded-opentype'),
+       font-url('ABCDiatypeSemi-MonoEdu-Light.woff') format('woff'),
+       font-url('ABCDiatypeSemi-MonoEdu-Light.ttf') format('truetype');
+
+}
+$my-font: "ABC Diatype Semi-Mono Edu-Light";
+
+@font-face {
+  font-family: "ABC Diatype Edu-Light";
+  src: font-url('ABCDiatypeEdu-Light.eot');
+  src: font-url('ABCDiatypeEdu-Light.eot?#iefix') format('embedded-opentype'),
+       font-url('ABCDiatypeEdu-Light.woff') format('woff'),
+       font-url('ABCDiatypeEdu-Light.ttf') format('truetype');
+
+}
+$my-font: "ABC Diatype Edu-Light";
