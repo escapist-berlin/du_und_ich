@@ -1,5 +1,6 @@
 class PhrasesController < ApplicationController
   def index
+    @categories = Category.all
     @phrases = Phrase.all
   end
 
