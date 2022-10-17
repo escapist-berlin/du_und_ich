@@ -1,20 +1,32 @@
 <div data-refresh-content-target="content" class="container">
-  <div class="row">
+  <%# <div class="row"> %>
+<div class="wrap">
     <div class="phrasebody">
       <% @phrases.each do |phrase| %>
-
+        <div class="column">
           <%= phrase.title %>
-
+        </div>
           <%# <br> %>
       <% end %>
     </div>
-    <div class="phrasebody2">
-      <% @phrases.each do |phrase| %>
 
-          <%= phrase.title %>
+    <%# <div class="phrasebody2"> %>
+      <%# <% @phrases.each do |phrase| %>
+
+          <%# <%= phrase.title %>
 
           <%# <br> %>
-      <% end %>
-    </div>
-  </div>
+      <%# <% end %>
+    <%# </div> %>
 </div>
+    <%# <div class="phrasebody3"> %>
+      <%# <% @phrases.each do |phrase| %>
+
+          <%# <%= phrase.title %>
+
+          <%# <br> %>
+      <%# <% end %>
+    <%# </div> %>
+
+  <%# </div> %>
+<%# </div> %>
