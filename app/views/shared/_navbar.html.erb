@@ -1,4 +1,4 @@
-<ul id="menu">
+<%# <ul id="menu">
   <li>
     <input id="check01" type="checkbox" name="menu"/>
       <label for="check01">über mich</label>
@@ -41,4 +41,20 @@
           <li><a href="#">Nur Spaß</a></li>
         </ul>
   </li>
-</ul>
+</ul> %>
+
+<header>
+  <div class="navBox">
+    <div class="nav-links">
+      <ul>
+        <%= render "shared/category", categories: @categories %>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<%# <div class="navBox">
+  <ul>
+
+  </ul>
+</div> %>
