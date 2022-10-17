@@ -1,0 +1,10 @@
+<% subcategories.each do |subcategory| %>
+  <li class="dropdown-link">
+    <a href="#"><%= subcategory.title %></a>
+    <div class="dropdown second">
+      <ul>
+        <%= render "shared/phrase", phrases: subcategory.phrases %>
+      </ul>
+    </div>
+  </li>
+<% end %>
