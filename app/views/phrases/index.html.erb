@@ -1,13 +1,13 @@
 <div data-refresh-content-target="content" class="container">
+  <div class="row">
+    <div class="adbody">
+      <% @phrases.each do |phrase| %>
 
-  <div class="adbody">
-    <% @phrases.each do |phrase| %>
+          <%= phrase.title %>
 
-        <%= phrase.title %>
+          <%# <br> %>
 
-        <br>
-
-    <% end %>
+      <% end %>
+    </div>
   </div>
-
 </div>

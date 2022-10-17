@@ -1,0 +1,37 @@
+.adbody {
+  width: 100vw;
+  // height: 24px;
+  margin-top: -57px;
+  margin-left: 6px;
+  padding-left: 20px;
+  padding-top: 20px;
+
+/* 16 words */
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 24px;
+  color: #261824;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  display: grid;
+  height: 200px;
+  // grid-template-columns: 200px;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+// div.adbody {
+//   overflow: auto;
+//   white-space: nowrap;
+// }
+
+// .row {
+//   display: grid;
+//   height: 200px;
+//   grid-template-columns: 200px;
+//   grid-template-rows: repeat(6, 1fr);
+// }
