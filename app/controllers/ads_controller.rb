@@ -4,7 +4,6 @@ class AdsController < ApplicationController
 
     if params[:query].present?
       @ads = @ads.where(decade: params[:query])
-      # raise
     end
 
     respond_to do |format|
