@@ -1,284 +1,131 @@
-// ul#menu{
-//   position: relative;
-//   width: 100%;
-//   height: 60px;
-//   border-bottom: 0.5px solid #261824;
-//   text-align: center;
-//   position: fixed;
-//   margin-top: -18px;
-//   background-color: #f9f9f9;
-//   display: flex;
-//   justify-content: center;
-//   padding-left: 0px;
-// }
-
-// ul#menu > li{
-//   float:center;
-//   list-style-type:none;
-//   position:relative;
-//   text-align:center;
-// }
-
-// label{
-//   position:relative;
-//   padding:0 18px 0 12px;
-//   font-family: 'Noto Sans Mono', monospace;
-//   font-style: normal;
-//   font-weight: 263;
-//   font-size: 14px;
-//   line-height: 32px;
-//   text-align: center;
-//   text-transform: capitalize;
-//   color: #261824;
-//   box-shadow: none;
-//   margin: 22px;
-
-// }
-
-//   label:hover,
-//   input:checked ~ label{background:#f9f9f9;}
-
-//   input:checked ~ label:after{
-//     border-top:0 solid #f9f9f9;
-//     border-bottom:4px solid #f9f9f9;
-//     transition:border-top .1s, border-bottom .1s .1s;
-//   }
-
-//   ul.submenu{
-//     max-height:0;
-//     padding:4px;
-//     overflow:hidden;
-//     list-style-type:none;
-//     background:#f9f9f9;
-//     position:absolute;
-//     min-width:100%;
-//     font-family: 'Noto Sans Mono', monospace;
-//     font-style: normal;
-//     font-weight: 263;
-//     font-size: 14px;
-//     line-height: 32px;
-//     text-align: center;
-//     color: #261824;
-//     box-shadow: none;
-//     margin: 25px;
-//     height: 44px;
-//     margin-top: -16px;
-//     margin-left: -764px;
-//     width: 100vw;
-//     display: flex;
-//     justify-content: space-evenly;
-
-//   }
-
-//   ul.submenu li a{
-//     padding:1px;
-//     color:#261824;
-//     text-decoration:none;
-//     white-space:nowrap;
-//     display: flex;
-//     justify-content: space-evenly;
-
-
-//   }
-
-//   ul.submenu li a:hover{
-//     background:#f9f9f9;
-//   }
-
-//   /*hide the inputs*/
-//   input{display:none}
-
-//   input:checked ~ ul.submenu{
-//     max-height:300px;
-//     display: flex;
-//     justify-content: space-evenly;
-//     margin: -12px;
-//     padding: 12px;
-//     border-bottom: 0.5px solid #261824;
-//     height: 44px;
-//     margin-top: -16px;
-
-//   }
-
-// MY FIRST EXPERIMENT !!!!!!!!!!!!!!!!!
-
-// .navBox {
-//   width: 100%;
-//   height: 60px;
-//   border-bottom: 0.5px solid #261824;
-//   position: fixed;
-//   background-color: #f9f9f9;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   ul {
-//     display: flex;
-//   }
-
-//   li {
-//     list-style-type: none;
-//     padding: 12px 18px 0 12px;
-//     font-family: 'Noto Sans Mono', monospace;
-//     font-style: normal;
-//     font-weight: 263;
-//   }
-
-//   a {
-//     text-decoration: none;
-//   }
-// }
-
-// MY SECOND EXPERIMENT
-
-
-
-header {
+.navbar {
   position: sticky;
   top: 0px;
   background-color: #f9f9f9;
-  width: 100%;
-  z-index: 1000;
 
-  ul {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .navBox {
-    max-width: 100%;
-    padding: 0 2rem;
-    height: 3rem;
-    margin: 0 auto;
-    display: flex;
-    border-bottom: 0.5px solid #261824;
-
-    .nav-links {
-      flex: 3;
-    }
-
-  }
-}
-
-.nav-links > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-link > a {
-  line-height: 3rem;
-  padding: 0 .8rem;
-  letter-spacing: 1px;
-  // font-size: .95rem;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-family: 'ABC Diatype Mono Variable Edu';
+  font-size: 18px;
   font-style: normal;
   font-weight: 263;
-  transition: .5s;
-}
-
-.nav-link:hover > a {
-  border-bottom: 4px solid #f9f9f9;
-}
-
-.nav-link:after > a {
-  border-top: 0 solid #f9f9f9;
-  border-bottom: 4px solid #f9f9f9;
-  transition: border-top .1s, border-bottom .1s .1s;
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-
-  max-width: 100%;
-  padding: 0 2rem;
-  height: 3rem;
-  margin: 0 auto;
-  display: flex;
   border-bottom: 0.5px solid #261824;
 
-  background-color: #f9f9f9;
-
-  transform: translate(10px);
-  opacity: 0;
-  pointer-events: none;
-  transition: .5s;
-
   display: flex;
   justify-content: center;
-
-  ul {
-    display: flex;
-  }
-}
-
-.dropdown-link > a {
-  // display: flex;
-  // background-color: #fff;
-  // color: #3498;
-  // padding: .5rem 1rem;
-  // font-size: .9rem;
-  // align-items: center;
-  // justify-content: space-between;
-  // transition: .3s;
-
-  line-height: 3rem;
-  padding: 0 .8rem;
-  letter-spacing: 1px;
-  // font-size: .95rem;
-  font-size: 18px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-family: 'ABC Diatype Mono Variable Edu';
-  font-style: normal;
-  font-weight: 263;
-  transition: .5s;
+
 }
 
-.dropdown-link:hover > a {
-  background-color: #3498;
-  color: #fff;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 0.5px solid #261824;
 }
 
-.dropdown-link:not(:nth-last-child(2)) {
-  border-bottom: 1px solid #efefef;
+.subnav {
+  float: left;
+  overflow: hidden;
 }
 
-// Opens/hides dropdown-menu
-
-.nav-link:hover > .dropdown,
-.dropdown-link:hover > .dropdown {
-  transform: translate(0, 0);
-  opacity: 1;
-  pointer-events: auto;
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-.dropdown-link {
-  position: relative;
-}
+// .navbar a:hover, .subnav:hover .subnavbtn {
+//   background-color: red;
+// }
 
-.dropdown.second {
-  // position: absolute;
-  // // top: 100%;
-  // left: 0;
-  // right: 0;
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
   background-color: #f9f9f9;
+  border-bottom: 0.5px solid #261824;
+  border-top: 0.5px solid #261824;
+}
 
-  transform: translate(10px);
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
 
-  ul {
-    flex-direction: row;
-    overflow-x: auto;
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subnav1:hover .subnav-content1 {
+  display: flex;
+  align-items: baseline;
+  overflow-x: auto;
+}
+
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav1 .subnavbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav-content1 {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  z-index: 1;
+
+  border-bottom: 0.5px solid #261824;
+  border-top: 0.5px solid #261824;
+}
+
+.subnav-content1 a {
+  float: left;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.subnav-content1 a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+// hide scroll bar, but have element scrollable
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
   }
 }
