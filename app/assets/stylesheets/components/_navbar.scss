@@ -184,9 +184,9 @@ header {
   transition: .5s;
 }
 
-.nav-link:hover > a {
-  border-bottom: 4px solid #f9f9f9;
-}
+// .nav-link:hover > a {
+//   border-bottom: 4px solid #f9f9f9;
+// }
 
 .nav-link:after > a {
   border-top: 0 solid #f9f9f9;
@@ -246,10 +246,10 @@ header {
   transition: .5s;
 }
 
-.dropdown-link:hover > a {
-  background-color: #3498;
-  color: #fff;
-}
+// .dropdown-link:hover > a {
+//   background-color: #3498;
+//   color: #fff;
+// }
 
 .dropdown-link:not(:nth-last-child(2)) {
   border-bottom: 1px solid #efefef;
