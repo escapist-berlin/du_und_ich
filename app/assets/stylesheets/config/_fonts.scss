@@ -43,3 +43,13 @@ $my-font: "ABC Diatype Semi-Mono Edu-Light";
 
 }
 $my-font: "ABC Diatype Edu-Light";
+
+@font-face {
+  font-family: "ABC Diatype Variable Edu";
+  src: font-url('ABCDiatypeVariableEdu.eot');
+  src: font-url('ABCDiatypeVariableEdu.eot?#iefix') format('embedded-opentype'),
+       font-url('ABCDiatypeVariableEdu.woff') format('woff'),
+       font-url('ABCDiatypeVariableEdu.ttf') format('truetype');
+
+}
+$my-font: "ABC Diatype Variable Edu";
