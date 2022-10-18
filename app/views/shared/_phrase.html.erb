@@ -1,5 +1,5 @@
 <% phrases.each do |phrase| %>
 
-  <a href="#"><%= phrase.title %></a>
+  <%= link_to phrase.title, ads_phrase_path(phrase) %>
 
 <% end %>
