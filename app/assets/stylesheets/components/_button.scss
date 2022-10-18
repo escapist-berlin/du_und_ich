@@ -1,100 +1,169 @@
-.buttons {
-  display: flex;
+// .buttons {
+//   display: flex;
+//   height: 52px;
+//   width: 73px;
+//   background: #FFFFFF;
+//   border: 0.5px solid #000000;
+//   color: #261824;
+//   cursor: pointer;
+//   position: fixed;
+//   right: 0;
+//   bottom: 59px;
+//   font-size: 50px;
+//   margin-right: 43px;
+//   margin-bottom: -37px;
+//   box-sizing: border-box;
+
+// }
+
+// .buttons div > * {
+//   pointer-events: none;
+// }
+
+// .grid {
+//   height: 52px;
+//   width: 73px;
+//   background: #FFFFFF;
+//   border: 0.5px solid #000000;
+//   color: #261824;
+//   cursor: pointer;
+//   position: fixed;
+//   right: 0;
+//   bottom: 59px;
+//   font-size: 50px;
+//   margin-right: 43px;
+//   margin-bottom: -37px;
+//   box-sizing: border-box;
+// }
+
+
+// .grid2 {
+//   height: 52px;
+//   width: 73px;
+//   background-image: url(grid2.svg);
+//   background-size: auto;
+//   background-position-x: center;
+//   background-position-y: center;
+//   border: 0.5px solid #000000;
+//   color: #261824;
+//   cursor: pointer;
+//   position: fixed;
+//   right: 0;
+//   bottom: 59px;
+//   font-size: 50px;
+//   margin-right: 43px;
+//   margin-bottom: 80px;
+//   box-sizing: border-box;
+// }
+
+// .grid4 {
+//   height: 52px;
+//   width: 73px;
+//   background-image: url(grid4.svg);
+//   background-size: auto;
+//   background-position-x: center;
+//   background-position-y: center;
+//   border: 0.5px solid #000000;
+//   color: #261824;
+//   cursor: pointer;
+//   position: fixed;
+//   right: 0;
+//   bottom: 118px;
+//   font-size: 50px;
+//   margin-right: 43px;
+//   margin-bottom: -37px;
+//   box-sizing: border-box;
+// }
+
+// .grid6 {
+//   height: 52px;
+//   width: 73px;
+//   background-image: url(grid6.svg);
+//   background-size: auto;
+//   background-position-x: center;
+//   background-position-y: center;
+//   border: 0.5px solid #000000;
+//   color: #261824;
+//   cursor: pointer;
+//   position: fixed;
+//   right: 0;
+//   bottom: 59px;
+//   font-size: 50px;
+//   margin-right: 118px;
+//   margin-bottom: -37px;
+//   box-sizing: border-box;
+// }
+
+// My version of grid btn
+
+.grid-btn1 {
   height: 52px;
   width: 73px;
-  background: #FFFFFF;
   border: 0.5px solid #000000;
-  color: #261824;
-  cursor: pointer;
   position: fixed;
   right: 0;
-  // bottom: 59px;
-  font-size: 50px;
-  // margin-right: 43px;
-  // margin-bottom: -37px;
-  box-sizing: border-box;
+  left: 1328px;
+  bottom: 59px;
   margin-right: 34px;
   margin-bottom: -25px;
   margin-top: 0px;
-  bottom: 59px;
+  background-image: url(grid1.svg);
+  background-position-x: center;
+  background-position-y: center;
+  font-size: 50px;
+  box-sizing: border-box;
+}
+
+.grid-btn2 {
+  height: 52px;
+  width: 73px;
+  border: 0.5px solid #000000;
+  position: fixed;
+  right: 0;
   left: 1328px;
-
-}
-
-.buttons div > * {
-  pointer-events: none;
-}
-
-.grid {
-  height: 52px;
-  width: 73px;
-  background: #FFFFFF;
-  border: 0.5px solid #000000;
-  color: #261824;
-  cursor: pointer;
-  position: fixed;
-  right: 0;
   bottom: 59px;
-  font-size: 50px;
-  margin-right: 43px;
-  margin-bottom: -37px;
-  box-sizing: border-box;
-}
-
-
-.grid2 {
-  height: 52px;
-  width: 73px;
+  margin-right: 34px;
+  margin-bottom: -25px;
+  margin-top: 0px;
   background-image: url(grid2.svg);
-  background-size: auto;
   background-position-x: center;
   background-position-y: center;
-  border: 0.5px solid #000000;
-  color: #261824;
-  cursor: pointer;
-  position: fixed;
-  right: 0;
-  bottom: 59px;
   font-size: 50px;
-  margin-right: 43px;
-  margin-bottom: 80px;
   box-sizing: border-box;
 }
 
-.grid4 {
+.grid-btn4 {
   height: 52px;
   width: 73px;
+  border: 0.5px solid #000000;
+  position: fixed;
+  right: 0;
+  left: 1328px;
+  bottom: 59px;
+  margin-right: 34px;
+  margin-bottom: -25px;
+  margin-top: 0px;
   background-image: url(grid4.svg);
-  background-size: auto;
   background-position-x: center;
   background-position-y: center;
-  border: 0.5px solid #000000;
-  color: #261824;
-  cursor: pointer;
-  position: fixed;
-  right: 0;
-  bottom: 118px;
   font-size: 50px;
-  margin-right: 43px;
-  margin-bottom: -37px;
   box-sizing: border-box;
 }
 
-.grid6 {
+.grid-btn6 {
   height: 52px;
   width: 73px;
-  background-image: url(grid6.svg);
-  background-size: auto;
-  background-position-x: center;
-  background-position-y: center;
   border: 0.5px solid #000000;
-  color: #261824;
-  cursor: pointer;
   position: fixed;
   right: 0;
+  left: 1328px;
   bottom: 59px;
+  margin-right: 34px;
+  margin-bottom: -25px;
+  margin-top: 0px;
+  background-image: url(grid6.svg);
+  background-position-x: center;
+  background-position-y: center;
   font-size: 50px;
-  margin-right: 118px;
-  margin-bottom: -37px;
   box-sizing: border-box;
 }
