@@ -6,5 +6,12 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :ads, only: [:index]
 
-  resources :phrases, only: [:index]
+  resources :phrases, only: [:index] do
+    member do
+      get :ads
+    end
+  end
+
+  get "about", to: "pages#about"
+
 end

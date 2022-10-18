@@ -1,3 +1,5 @@
 <% phrases.each do |phrase| %>
-  <li class="dropdown-link"><a href="#"><%= phrase.title %></a></li>
+
+  <%= link_to phrase.title, ads_phrase_path(phrase) %>
+
 <% end %>

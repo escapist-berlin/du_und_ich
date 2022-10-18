@@ -7,6 +7,7 @@ class PhrasesController < ApplicationController
  
 
   def ads
+    @categories = Category.all
     @phrase = Phrase.find(params[:id])
     @ads = @phrase.ads
   end

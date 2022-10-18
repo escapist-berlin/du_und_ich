@@ -1,10 +1,10 @@
 <% categories.each do |category| %>
-  <li class="nav-link">
-    <a href="#"><%= category.title %></a>
-    <div class="dropdown">
-      <ul>
+
+  <div class="subnav">
+    <button class="subnavbtn"><%= category.title %></button>
+    <div class="subnav-content">
         <%= render "shared/subcategory", subcategories: category.subcategories %>
-      </ul>
     </div>
-  </li>
+  </div>
+
 <% end %>
