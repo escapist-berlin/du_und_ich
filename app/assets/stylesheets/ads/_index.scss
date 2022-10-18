@@ -6,6 +6,11 @@
   max-width: 1442px;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
 .adbody {
   font-family: 'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
@@ -22,6 +27,7 @@
   padding: 20px;
   margin-bottom: -4px;
   width: 100vw;
+
 }
 
 // #col::after {
@@ -34,8 +40,8 @@
 //   // break-after: column;
 // }
 
-#col {
-}
+// #col {
+// }
 
 // .column::after {
 //   column-fill: auto;
