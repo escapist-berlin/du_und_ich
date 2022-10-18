@@ -23,13 +23,17 @@
   font-weight: 263;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
+  // text-align: center;
   text-transform: capitalize;
   color: #261824;
   // margin-bottom: -19px;
   margin-bottom: -32px;
+  margin-right: -16px;
+
   padding-top: 19px;
   padding-bottom: 19px;
+  // padding-left: 20px;
+  // padding-right: 20px;
 
 }
 
@@ -45,6 +49,7 @@
   margin-bottom: -32px;
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-left: 25px;
 }
 
 .right-title{
@@ -75,6 +80,10 @@
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+.menu {
+  margin-left: 159px;
 }
 
 .link {
