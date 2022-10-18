@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import GridBtnController from "./grid_btn_controller"
+application.register("grid-btn", GridBtnController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

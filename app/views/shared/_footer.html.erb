@@ -38,26 +38,16 @@
   </div>
 </div>
 
-<div class="buttons">
-  <button id="btn" class="grid" onclick="listView()"></button>
+<button id="grid-btn" class="grid-btn1" data-controller="grid-btn" data-action="click->grid-btn#change"></button>
+<%# <button id="grid-btn" class="grid-btn1"></button> %>
+
+<%# <div class="buttons">
+  <button id="btn" class="grid"></button>
+  <%# <button id="btn" class="grid" onclick="listView()"></button>
   <button id="btn" class="grid2" onclick="gridView()"></button>
   <button id="btn"class="grid4" onclick="grid2View()"></button>
-  <button id="btn" class="grid6" onclick="grid4View()"></button>
-</div>
+  <button id="btn" class="grid6" onclick="grid4View()"></button> %>
+</div> %>
 
 
 <%# one button changing backgroundColor %>
-<script>
-  const btn = document.getElementById('btn');
-
-  let index = 0;
-
-  const colors = ['salmon', 'green', 'blue', 'purple'];
-
-  btn.addEventListener('click', function onClick() {
-    btn.style.backgroundColor = colors[index];
-    btn.style.color = 'white';
-
-    index = index >= colors.length - 1 ? 0 : index + 1;
-  });
-</script>
