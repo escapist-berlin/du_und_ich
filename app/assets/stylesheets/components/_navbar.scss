@@ -3,15 +3,20 @@
   top: 0px;
   background-color: #f9f9f9;
 
-  font-family: 'ABC Diatype Mono Variable Edu';
+  font-family: 'ABC Diatype Variable Edu';
   font-size: 18px;
   font-style: normal;
   font-weight: 263;
+  height: 60px;
   border-bottom: 0.5px solid #261824;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 
@@ -24,6 +29,7 @@
   text-decoration: none;
   border-bottom: 0.5px solid #261824;
 }
+
 
 .subnav {
   float: left;
@@ -39,6 +45,9 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+
 }
 
 // .navbar a:hover, .subnav:hover .subnavbtn {
