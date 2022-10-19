@@ -1,11 +1,15 @@
 .phrasebody {
-  margin-top: 0px;
+//positioning row
+  margin-top: 10px;
   margin-left: -77px;
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+
+//row style
   border-bottom: 0.5px solid;
-// /* 16 words */
+
+//test style
   font-family:  'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
   font-weight: 263;
@@ -13,37 +17,26 @@
   line-height: 13px;
   color: #261824;
 
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
-
-//   // display: grid;
-//   // height: 62px;
-//   // width: 100vw;
-
-//   // grid-template-columns: 200px;
-//   grid-template-rows: repeat(6, 1fr);
-
+//positioning words
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  table-layout: inherit;
-  tab-size: revert;
+
+ //scrollin
   content: counter;
   overflow: auto;
   white-space: pre;
   scrollbar-width: none;
-
-
-
 }
 
-// .column {
-//   flex: 50%;
-//   padding: 10px;
-//   height: 300px;
+.column {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+  margin-right: -70px;
 
-// }
+}
 
 // .phrasebody2 {
 //   margin-top: 0px;
