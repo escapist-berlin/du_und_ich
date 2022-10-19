@@ -3,8 +3,10 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="grid-btn"
 export default class extends Controller {
   connect() {
-    console.log("HELLO FROM GRID-BTN CONTROLLER!")
+    // console.log("HELLO FROM GRID-BTN CONTROLLER!")
   }
+
+  // Pseudocode
 
   change(event) {
 
@@ -15,44 +17,18 @@ export default class extends Controller {
     let currentClass = this.element.classList[0];
     let currentIndex = grids.indexOf(currentClass);
 
+    const removeClass = (elementClass) => this.element.classList.remove(elementClass);
+    const addClass = (elementClass) => this.element.classList.add(elementClass);
+
     // Updating the class of the grid button
     if(currentIndex < grids.length - 1) {
-      this.element.classList.remove(currentClass);
+      removeClass(currentClass);
       currentIndex += 1;
-      this.element.classList.add(`${grids[currentIndex]}`);
-
-      // Updating the url if there is a query string or not
-      let currentURL = event.target.baseURI;
-      let queryString = window.location.search; // we can check if there is a query string
-
-      if (queryString.length === 0) {
-        window.location.href = `${currentURL}?grid=${grids[currentIndex]}`;
-        console.log(queryString);
-      } else {
-        window.location.href = `${currentURL}&grid=${grids[currentIndex]}`;
-        console.log(queryString);
-      }
-
-
+      addClass(grids[currentIndex]);
     } else {
-      this.element.classList.remove(currentClass);
+      removeClass(currentClass);
       currentIndex = 0;
-      this.element.classList.add(`${grids[currentIndex]}`);
-
-
-      // Updating the url if there is a query string or not
-      let currentURL = event.target.baseURI;
-      let queryString = window.location.search;
-
-      if (queryString.length === 0) {
-        window.location.href = `${currentURL}?grid=${grids[currentIndex]}`;
-        console.log(queryString);
-      } else {
-        window.location.href = `${currentURL}&grid=${grids[currentIndex]}`;
-        console.log(queryString);
-      }
-
-
+      addClass(grids[currentIndex]);
     }
 
   }
