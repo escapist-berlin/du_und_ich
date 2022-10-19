@@ -12,19 +12,17 @@ export default class extends Controller {
   update(event) {
     event.preventDefault()
 
-    // adds query string to the url
-    window.location.href = `${event.target.offsetParent.href}?query=${event.target.innerHTML}`
+    // Adding query string with decade
+    // First variant
+    // window.location.href = `${event.target.offsetParent.href}?query=${event.target.innerHTML}`
 
-    // const url = `${this.contentTarget.attributes[0].baseURI}?query=${this.firstDecadeTarget.innerText}`
-    // const url = window.location.href
+    // Second variant
+    let searchParams = new URLSearchParams(window.location.search);
+    let decadeString = event.target.innerHTML;
+    const decadeHref = event.target.offsetParent.href;
 
-    // // console.log(url)
-
-    // fetch(url, { headers: { 'Accept': 'text/plain' } })
-    // .then(response => response.text())
-    // .then((data) => {
-    //   console.log(data);
-    // })
+    searchParams.set('query', decadeString);
+    window.location.href = decadeHref + '?' + searchParams.toString();
 
   }
 }

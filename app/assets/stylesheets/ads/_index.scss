@@ -8,7 +8,8 @@
 
 .layout {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  // height: 98%;
 }
 
 .adbody {
@@ -30,6 +31,27 @@
 
   margin-left: -11px;
   // margin: 0px;
+  margin-bottom: 0px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.content-grid2 {
+  font-family: 'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 36px;
+  line-height: 46px;
+  color: #261824;
+
+  flex: 0 0 25%;
+  border-bottom: 0.5px solid #261824;
+
+  // width: 100vw;
+
+  margin-left: -11px;
   margin-bottom: 0px;
   padding-top: 16px;
   padding-left: 16px;

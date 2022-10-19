@@ -3,26 +3,32 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="grid-btn"
 export default class extends Controller {
   connect() {
-    console.log("HELLO FROM GRID-BTN CONTROLLER!")
+    // console.log("HELLO FROM GRID-BTN CONTROLLER!")
   }
 
-  change(e) {
+  // Pseudocode
 
-    e.preventDefault();
+  change(event) {
+
+    event.preventDefault();
 
     const grids = ['grid-btn2', 'grid-btn4', 'grid-btn6', 'grid-btn1'];
 
     let currentClass = this.element.classList[0];
     let currentIndex = grids.indexOf(currentClass);
 
+    const removeClass = (elementClass) => this.element.classList.remove(elementClass);
+    const addClass = (elementClass) => this.element.classList.add(elementClass);
+
+    // Updating the class of the grid button
     if(currentIndex < grids.length - 1) {
-      this.element.classList.remove(currentClass);
+      removeClass(currentClass);
       currentIndex += 1;
-      this.element.classList.add(`${grids[currentIndex]}`);
+      addClass(grids[currentIndex]);
     } else {
-      this.element.classList.remove(currentClass);
+      removeClass(currentClass);
       currentIndex = 0;
-      this.element.classList.add(`${grids[currentIndex]}`);
+      addClass(grids[currentIndex]);
     }
 
   }
