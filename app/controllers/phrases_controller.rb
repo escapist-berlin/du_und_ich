@@ -4,7 +4,10 @@ class PhrasesController < ApplicationController
     @phrases = Phrase.all
   end
 
- 
+  # def shuffle(phrase)
+  #   phrase = @phrases.all
+  #   phrase.sort_by { rand }
+  # end
 
   def ads
     @categories = Category.all

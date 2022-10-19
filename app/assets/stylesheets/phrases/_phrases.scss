@@ -17,7 +17,7 @@
   line-height: 13px;
   color: #261824;
 
-//positioning words
+//display words
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,7 @@
   scrollbar-width: none;
 }
 
+//positioning word in the row
 .column {
   padding-left: 20px;
   padding-right: 20px;
@@ -38,66 +39,65 @@
 
 }
 
-// .phrasebody2 {
-//   margin-top: 0px;
-//   margin-left: 0px;
-//   padding-left: 20px;
-//   padding-top: 20px;
-//   border-bottom: 0.5px solid;
+.phrasebody2 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
 
-// /* 16 words */
-//   font-family:  'ABC Diatype Semi-Mono Edu-Light';
-//   font-style: normal;
-//   font-weight: 263;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #261824;
+  //row style
+  border-bottom: 0.5px solid;
 
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
 
-//   display: grid;
-//   height: 62px;
-//   grid-template-rows: repeat(6, 1fr);
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  
 
-//   box-sizing: border-box;
-//   display: block ruby;
-//   table-layout: inherit;
-//   tab-size: revert;
-//   content: counter;
-//   overflow: auto;
-//   white-space: pre;
-// }
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
 
-// .phrasebody3 {
-//   margin-top: 0px;
-//   margin-left: 0px;
-//   padding-left: 20px;
-//   padding-top: 20px;
-//   border-bottom: 0.5px solid;
+.phrasebody3 {
+   //positioning row
+   margin-top: 0px;
+   margin-left: -77px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   height: 60px;
 
-// /* 16 words */
-//   font-family:  'ABC Diatype Semi-Mono Edu-Light';
-//   font-style: normal;
-//   font-weight: 263;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #261824;
+   //row style
+   border-bottom: 0.5px solid;
 
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
+   //test style
+   font-family:  'ABC Diatype Semi-Mono Edu-Light';
+   font-style: normal;
+   font-weight: 263;
+   font-size: 16px;
+   line-height: 13px;
+   color: #261824;
 
-//   display: grid;
-//   height: 62px;
-//   grid-template-rows: repeat(6, 1fr);
+   //display words
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
 
-//   box-sizing: border-box;
-//   display: block ruby;
-//   table-layout: inherit;
-//   tab-size: revert;
-//   content: counter;
-//   overflow: auto;
-//   white-space: pre;
-// }
+   //scrollin
+   content: counter;
+   overflow: auto;
+   white-space: pre;
+   scrollbar-width: none;
+}
