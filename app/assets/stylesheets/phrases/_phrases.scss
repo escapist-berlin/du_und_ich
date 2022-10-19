@@ -1,77 +1,435 @@
+.container {
+  padding-right: 0px;
+}
+​
 .phrasebody {
-  // margin-top: 0px;
+//positioning row
+  margin-top: 10px;
   margin-left: -77px;
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   height: 60px;
-  margin-top: -10px;
+​
+//row style
   border-bottom: 0.5px solid;
-// /* 16 words */
+​
+//test style
   font-family:  'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
   font-weight: 263;
   font-size: 16px;
   line-height: 13px;
   color: #261824;
-
+​
+//display words
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  table-layout: inherit;
-  tab-size: revert;
+​
+ //scrollin
   content: counter;
   overflow: auto;
   white-space: pre;
   scrollbar-width: none;
 }
-
+//positioning word in the row
+.column {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+  margin-right: -70px;
+​
+}
 .phrasebody2 {
+  //positioning row
   margin-top: 0px;
   margin-left: -77px;
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
   border-bottom: 0.5px solid;
-// /* 16 words */
+​
+  //test style
   font-family:  'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
   font-weight: 263;
   font-size: 16px;
   line-height: 13px;
   color: #261824;
-
+​
+  //display words
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  table-layout: inherit;
-  tab-size: revert;
+​
+​
+  //scrollin
   content: counter;
   overflow: auto;
   white-space: pre;
   scrollbar-width: none;
 }
-
 .phrasebody3 {
+   //positioning row
+   margin-top: 0px;
+   margin-left: -77px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   height: 60px;
+​
+   //row style
+   border-bottom: 0.5px solid;
+​
+   //test style
+   font-family:  'ABC Diatype Semi-Mono Edu-Light';
+   font-style: normal;
+   font-weight: 263;
+   font-size: 16px;
+   line-height: 13px;
+   color: #261824;
+​
+   //display words
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+​
+   //scrollin
+   content: counter;
+   overflow: auto;
+   white-space: pre;
+   scrollbar-width: none;
+}
+.phrasebody4 {
+  //positioning row
   margin-top: 0px;
   margin-left: -77px;
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
   border-bottom: 0.5px solid;
-// /* 16 words */
+​
+  //test style
   font-family:  'ABC Diatype Semi-Mono Edu-Light';
   font-style: normal;
   font-weight: 263;
   font-size: 16px;
   line-height: 13px;
   color: #261824;
-
+​
+  //display words
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  table-layout: inherit;
-  tab-size: revert;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody5 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody6 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+​
+}
+.phrasebody7 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody8 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody9 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody10 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody11 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody12 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody13 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+.phrasebody14 {
+  //positioning row
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 60px;
+​
+  //row style
+  border-bottom: 0.5px solid;
+​
+  //test style
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+​
+  //display words
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+​
+  //scrollin
   content: counter;
   overflow: auto;
   white-space: pre;
