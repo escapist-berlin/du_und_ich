@@ -1,4 +1,32 @@
 .phrasebody {
+  // margin-top: 0px;
+  margin-left: -77px;
+  padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  height: 60px;
+  margin-top: -10px;
+  border-bottom: 0.5px solid;
+// /* 16 words */
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  table-layout: inherit;
+  tab-size: revert;
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
+
+.phrasebody2 {
   margin-top: 0px;
   margin-left: -77px;
   padding-left: 20px;
@@ -13,16 +41,31 @@
   line-height: 13px;
   color: #261824;
 
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  table-layout: inherit;
+  tab-size: revert;
+  content: counter;
+  overflow: auto;
+  white-space: pre;
+  scrollbar-width: none;
+}
 
-//   // display: grid;
-//   // height: 62px;
-//   // width: 100vw;
-
-//   // grid-template-columns: 200px;
-//   grid-template-rows: repeat(6, 1fr);
+.phrasebody3 {
+  margin-top: 0px;
+  margin-left: -77px;
+  padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  border-bottom: 0.5px solid;
+// /* 16 words */
+  font-family:  'ABC Diatype Semi-Mono Edu-Light';
+  font-style: normal;
+  font-weight: 263;
+  font-size: 16px;
+  line-height: 13px;
+  color: #261824;
 
   box-sizing: border-box;
   display: flex;
@@ -33,78 +76,4 @@
   overflow: auto;
   white-space: pre;
   scrollbar-width: none;
-
-
-
 }
-
-// .column {
-//   flex: 50%;
-//   padding: 10px;
-//   height: 300px;
-
-// }
-
-// .phrasebody2 {
-//   margin-top: 0px;
-//   margin-left: 0px;
-//   padding-left: 20px;
-//   padding-top: 20px;
-//   border-bottom: 0.5px solid;
-
-// /* 16 words */
-//   font-family:  'ABC Diatype Semi-Mono Edu-Light';
-//   font-style: normal;
-//   font-weight: 263;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #261824;
-
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
-
-//   display: grid;
-//   height: 62px;
-//   grid-template-rows: repeat(6, 1fr);
-
-//   box-sizing: border-box;
-//   display: block ruby;
-//   table-layout: inherit;
-//   tab-size: revert;
-//   content: counter;
-//   overflow: auto;
-//   white-space: pre;
-// }
-
-// .phrasebody3 {
-//   margin-top: 0px;
-//   margin-left: 0px;
-//   padding-left: 20px;
-//   padding-top: 20px;
-//   border-bottom: 0.5px solid;
-
-// /* 16 words */
-//   font-family:  'ABC Diatype Semi-Mono Edu-Light';
-//   font-style: normal;
-//   font-weight: 263;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #261824;
-
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
-
-//   display: grid;
-//   height: 62px;
-//   grid-template-rows: repeat(6, 1fr);
-
-//   box-sizing: border-box;
-//   display: block ruby;
-//   table-layout: inherit;
-//   tab-size: revert;
-//   content: counter;
-//   overflow: auto;
-//   white-space: pre;
-// }
