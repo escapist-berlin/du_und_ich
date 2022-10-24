@@ -151,6 +151,7 @@
   line-height: 13px;
   color: #261824;
 
+
   //display words
   box-sizing: border-box;
   display: flex;
@@ -191,6 +192,7 @@
   overflow: auto;
   white-space: pre;
   scrollbar-width: none;
+
 }
 .phrasebody7 {
   //positioning row
@@ -245,6 +247,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+
 
   //scrollin
   content: counter;

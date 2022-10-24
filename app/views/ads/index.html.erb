@@ -1,5 +1,5 @@
 <div data-refresh-content-target="content" class="container">
-    <div id="col">
+    <div class="layout">
         <% @ads.each do |ad| %>
             <div class="adbody">
                 <div class="column" style="margin-right: 0px; padding-right: 0px;
@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<script>
+<%# <script>
   // Get the elements with class=""
   const elements = document.getElementsByClassName("adbody");
   // Declare a loop variable
@@ -63,4 +63,4 @@
       elements[i].style.columnCount = "6";
     }
   }
-</script>
+</script> %>
