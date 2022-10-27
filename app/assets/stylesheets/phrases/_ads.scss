@@ -10,22 +10,19 @@
   flex-grow: 1;
   // border-bottom: 0.5px solid #261824;
   // padding-top: 22px;
-  // margin: -12px;
-  // padding: 20px;
-
-  margin-bottom: -4px;
-  margin-top: 3px;
+  margin: 0px;
+  padding: 0px;
   width: 100vw;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  margin-right: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
 }
 
-// hr {
-//   border-bottom: 0.5px solid #261824;
-// }
+.ads {
+  border-bottom: 0.5px solid #261824;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+hr {
+  margin: 0px;
+}
