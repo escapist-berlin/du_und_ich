@@ -49,3 +49,17 @@
 //   // grid-auto-flow: column;
 //   // gap: 5%;
 // }
+
+// Grid classes
+
+.grid2-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+#grid2-left,
+#grid2-right {
+  flex: 1 auto;
+  padding: 2rem 3rem;
+  overflow-y: scroll;
+}
