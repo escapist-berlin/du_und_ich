@@ -1,0 +1,47 @@
+<div class="grid4-wrapper">
+
+  <%# First column %>
+  <div id="grid4-first">
+    <% ads[0].each do |ad| %>
+
+        <div class="grid4-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+  <%# Second column %>
+  <div id="grid4-second">
+    <% ads[1].each do |ad| %>
+
+        <div class="grid4-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+  <%# Third column %>
+  <div id="grid4-third">
+    <% ads[2].each do |ad| %>
+
+        <div class="grid4-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+  <%# Fourth column %>
+  <div id="grid4-fourth">
+    <% ads[3].each do |ad| %>
+
+        <div class="grid4-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+</div>

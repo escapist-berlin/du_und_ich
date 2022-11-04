@@ -1,12 +1,13 @@
-<div class="layout">
-  <% ads.each do |ad| %>
-      <div class="adbody">
-          <div class="column" style="margin-right: 0px; padding-right: 0px;
-                                      padding-left: 0px;
-                                      padding-top: 0px;
-                                      padding-bottom: 0px;">
-            <%= ad.content %>
-          </div>
+<div class="grid1-wrapper">
+
+  <div id="grid1-center">
+    <% ads.each do |ad| %>
+
+      <div class="grid1-adbody">
+        <p><%= ad.content %></p>
       </div>
-  <% end %>
+
+    <% end %>
+  </div>
+
 </div>

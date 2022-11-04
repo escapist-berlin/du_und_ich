@@ -1,25 +1,22 @@
-<%# Splitting ads array into two equally-sized (+/-1) parts %>
-<% divided_ads = ads.each_slice((ads.size/2.0).round).to_a %>
-
 <div class="grid2-wrapper">
 
-  <%# First column %>
+  <%# Left column %>
   <div id="grid2-left">
-    <% divided_ads[0].each do |ad| %>
+    <% ads[0].each do |ad| %>
 
-        <div class="adbody">
-        <%= ad.content %>
+        <div class="grid2-adbody">
+          <p><%= ad.content %></p>
         </div>
 
     <% end %>
   </div>
 
-  <%# Second column %>
+  <%# Right column %>
   <div id="grid2-right">
-    <% divided_ads[1].each do |ad| %>
+    <% ads[1].each do |ad| %>
 
-        <div class="adbody">
-        <%= ad.content %>
+        <div class="grid2-adbody">
+          <p><%= ad.content %></p>
         </div>
 
     <% end %>

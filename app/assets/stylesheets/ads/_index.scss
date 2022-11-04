@@ -4,62 +4,123 @@
   margin-left: 0px;
   margin-right: 0px;
   max-width: 1442px;
+
+  // Removes padding in all grid views
+  padding-left: 0;
 }
 
+// *********************** GRID CLASSES ************************** //
 
-.adbody {
-  font-family: 'ABC Diatype Semi-Mono Edu-Light';
-  font-style: normal;
-  font-weight: 263;
-  font-size: 36px;
-  line-height: 46px;
-  color: #261824;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  border-bottom: 0.5px solid #261824;
-  // padding-top: 22px;
-  margin: -12px;
-  padding: 20px;
-  margin-bottom: -4px;
-  margin-top: 3px;
+// -------------------- GRID WITH 1 COLUMN -------------------- //
+
+.grid1-wrapper {
+  display: flex;
+  height: 100vh;
   width: 100vw;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
+#grid1-center {
+  flex: 1 1 0;
+  overflow-y: scroll;
+}
 
-// #col::after {
-//   column-count: 2;
-//   border-right: 0.5px solid #261824 ;
-//   column-rule-style: solid;
-//   column-rule-width: 0.5px;
-//   // column-rule: 0.5px solid;
-//   margin: -12px;
-//   // break-after: column;
-// }
+.grid1-adbody {
+  border: 0.5px solid #261824;
 
+  p {
+    font-family: 'ABC Diatype Semi-Mono Edu-Light';
+    font-style: normal;
+    font-weight: 263;
+    font-size: 36px;
+    line-height: 46px;
+    color: #261824;
+  }
+}
 
-// .column::after {
-//   column-fill: auto;
-//   break-after: column;
-//   // float: left;
-//   // overflow: scroll;
-//   // display: grid;
-//   // grid-auto-flow: column;
-//   // gap: 5%;
-// }
-
-// Grid classes
+// -------------------- GRID WITH 2 COLUMNS -------------------- //
 
 .grid2-wrapper {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 
 #grid2-left,
 #grid2-right {
-  flex: 1 auto;
-  padding: 2rem 3rem;
+  flex: 1 1 0;
   overflow-y: scroll;
+}
+
+.grid2-adbody {
+  border: 0.5px solid #261824;
+
+  p {
+    font-family: 'ABC Diatype Semi-Mono Edu-Light';
+    font-style: normal;
+    font-weight: 263;
+    font-size: 24px;
+    line-height: 32px;
+    color: #261824;
+  }
+}
+
+// -------------------- GRID WITH 4 COLUMNS -------------------- //
+
+.grid4-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#grid4-first,
+#grid4-second,
+#grid4-third,
+#grid4-fourth {
+  flex: 1 1 0;
+  overflow-y: scroll;
+}
+
+.grid4-adbody {
+  border: 0.5px solid #261824;
+
+  p {
+    font-family: 'ABC Diatype Semi-Mono Edu-Light';
+    font-style: normal;
+    font-weight: 263;
+    font-size: 16px;
+    line-height: 24px;
+    color: #261824;
+  }
+}
+
+// -------------------- GRID WITH 6 COLUMNS -------------------- //
+
+.grid6-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#grid6-first,
+#grid6-second,
+#grid6-third,
+#grid6-fourth,
+#grid6-fifth,
+#grid6-sixth {
+  flex: 1 1 0;
+  overflow-y: scroll;
+}
+
+.grid6-adbody {
+  border: 0.5px solid #261824;
+
+  p {
+    font-family: 'ABC Diatype Semi-Mono Edu-Light';
+    font-style: normal;
+    font-weight: 290;
+    font-size: 12px;
+    line-height: 20px;
+    color: #261824;
+    font-variation-settings: 'MONO' 0.5;
+  }
 }
