@@ -1,13 +1,5 @@
 <div data-refresh-content-target="content" class="container">
-    <div class="layout">
-        <% @ads.each do |ad| %>
-            <div class="adbody">
-                <div class="column">
-                  <%= ad.content %>
-                </div>
-            </div>
-        <% end %>
-    </div>
+  <%= render "shared/grid4", ads: @ads4 %>
 </div>
 
 <%# <script>

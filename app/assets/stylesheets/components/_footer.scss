@@ -19,6 +19,8 @@
 
 .title {
   font-family: 'ABC Diatype Mono Variable Edu';
+  -webkit-font-smoothing: antialiased !important;
+
   font-style: normal;
   font-weight: 263;
   font-size: 14px;
@@ -36,6 +38,8 @@
 .left-title{
   text-align: left;
   font-family: 'ABC Diatype Mono Variable Edu';
+  -webkit-font-smoothing: antialiased !important;
+
   font-style: normal;
   font-weight: 263;
   font-size: 14px;
@@ -49,6 +53,8 @@
 
 .right-title{
   font-family: 'ABC Diatype Mono Variable Edu';
+  -webkit-font-smoothing: antialiased !important;
+
   font-style: normal;
   font-weight: 263;
   font-size: 14px;

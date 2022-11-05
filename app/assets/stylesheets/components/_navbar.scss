@@ -3,13 +3,13 @@
   top: 0px;
   background-color: #FFFFFF;
 
-  font-family: 'ABC Diatype Variable Edu';
+  font-family: "ABC Diatype Edu-Light";
   font-size: 18px;
   font-style: normal;
-  font-weight: 263;
+  font-weight: 263 !important;
   height: 60px;
   border-bottom: 0.5px solid #261824;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased !important;
 
   padding-top: 0px;
   padding-bottom: 0px;
@@ -17,7 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 
 }
 
@@ -29,12 +28,14 @@
   padding: 14px 16px;
   text-decoration: none;
   border-bottom: 0.5px solid #261824;
+
 }
 
 
 .subnav {
   float: left;
   overflow: hidden;
+
 }
 
 .subnav .subnavbtn {
@@ -69,12 +70,14 @@
   background-color: #FFFFFF;
   border-bottom: 0.5px solid #261824;
   border-top: 0.5px solid #261824;
+
 }
 
 .subnav-content a {
   float: left;
   color: black;
   text-decoration: none;
+
 }
 
 .subnav-content a:hover {
@@ -120,7 +123,7 @@
   width: 100%;
   z-index: 1;
 
-  font-family: "ABC Diatype Mono Variable Edu";
+  font-family: "ABC Diatype Edu-Light";
   font-size: 16px;
   font-weight: 263;
   -webkit-font-smoothing: antialiased;
