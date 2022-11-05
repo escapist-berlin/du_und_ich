@@ -1,0 +1,25 @@
+<div class="grid2-wrapper">
+
+  <%# Left column %>
+  <div id="grid2-left">
+    <% ads[0].each do |ad| %>
+
+        <div class="grid2-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+  <%# Right column %>
+  <div id="grid2-right">
+    <% ads[1].each do |ad| %>
+
+        <div class="grid2-adbody">
+          <p><%= ad.content %></p>
+        </div>
+
+    <% end %>
+  </div>
+
+</div>
