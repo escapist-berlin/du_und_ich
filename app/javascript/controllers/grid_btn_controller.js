@@ -10,7 +10,7 @@ export default class extends Controller {
 
   change(event) {
 
-    event.preventDefault();
+    // event.preventDefault();
 
     const grids = ['grid-btn2', 'grid-btn4', 'grid-btn6', 'grid-btn1'];
 
