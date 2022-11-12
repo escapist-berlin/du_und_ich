@@ -3,8 +3,8 @@ class AdsController < ApplicationController
     @categories = Category.all
 
     # If there is a decade in query:
-    if params[:query].present?
-      @ads = Ad.where(decade: params[:query])
+    if params[:decade].present?
+      @ads = Ad.where(decade: params[:decade])
       @ads2 = groups(@ads, 2)
       @ads4 = groups(@ads, 4)
       @ads6 = groups(@ads, 6)
