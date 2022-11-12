@@ -38,7 +38,14 @@
   </div>
 </div>
 
-<button id="grid-btn" class="grid-btn1" data-controller="grid-btn" data-action="click->grid-btn#change"></button>
+<% if params[:grid].present? %>
+  <% btn_class = "grid-btn" + params[:grid] %>
+<% else %>
+  <% btn_class = "grid-btn1" %>
+<% end %>
+
+<button id="grid-btn" class="<%= btn_class %>" data-controller="grid-btn" data-action="click->grid-btn#change"></button>
+<%# class="grid-btn1" %>
 
 <%# <div class="buttons">
   <button id="btn" class="grid"></button>
