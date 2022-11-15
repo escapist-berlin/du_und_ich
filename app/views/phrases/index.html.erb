@@ -2,15 +2,15 @@
 
   <% case params[:grid] %>
   <% when "1" %>
-    <%= render "shared/grid1_phrases", phrases: @splitted_phrases %>
+    <%= render "shared/grid1_phrases", phrases: @split_phrases %>
   <% when "2" %>
-    <%= render "shared/grid2_phrases", phrases: @splitted_phrases %>
+    <%= render "shared/grid2_phrases", phrases: @split_phrases %>
   <% when "4" %>
-    <%= render "shared/grid4_phrases", phrases: @splitted_phrases %>
+    <%= render "shared/grid4_phrases", phrases: @split_phrases %>
   <% when "6" %>
-    <%= render "shared/grid6_phrases", phrases: @splitted_phrases %>
+    <%= render "shared/grid6_phrases", phrases: @split_phrases %>
   <% else %>
-    <%= render "shared/grid1_phrases", phrases: @splitted_phrases %>
+    <%= render "shared/grid1_phrases", phrases: @split_phrases %>
   <% end %>
 
 </div>

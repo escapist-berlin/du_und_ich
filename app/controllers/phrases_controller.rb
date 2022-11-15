@@ -4,7 +4,7 @@ class PhrasesController < ApplicationController
     @phrases = Phrase.all
 
     # Splitting all phrases into 24 groups / rows
-    @splitted_phrases = groups(@phrases, 24)
+    @split_phrases = groups(@phrases, 24)
   end
 
   # def shuffle(phrase)

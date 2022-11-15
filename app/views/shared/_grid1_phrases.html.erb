@@ -3,10 +3,10 @@
   <div class="phrases-rows-wrapper">
     <% phrases.each do |phrases_row| %>
 
-      <div class="phrases-wrapper">
+      <div class="phrases-grid">
         <% phrases_row.each do |phrase| %>
 
-          <p><%= phrase.id %> - <%= phrase.title %></p>
+          <p><%= phrase.title %></p>
 
         <% end %>
       </div>
