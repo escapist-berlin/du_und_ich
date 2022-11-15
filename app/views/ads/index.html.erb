@@ -1,16 +1,16 @@
 <div data-refresh-content-target="content" class="container">
 
-<% case params[:grid] %>
-<% when "1" %>
-  <%= render "shared/grid1", ads: @ads %>
-<% when "2" %>
-  <%= render "shared/grid2", ads: @ads2 %>
-<% when "4" %>
-  <%= render "shared/grid4", ads: @ads4 %>
-<% when "6" %>
-  <%= render "shared/grid6", ads: @ads6 %>
-<% else %>
-  <%= render "shared/grid1", ads: @ads %>
-<% end %>
+  <% case params[:grid] %>
+  <% when "1" %>
+    <%= render "shared/grid1", ads: @ads %>
+  <% when "2" %>
+    <%= render "shared/grid2", ads: @ads2 %>
+  <% when "4" %>
+    <%= render "shared/grid4", ads: @ads4 %>
+  <% when "6" %>
+    <%= render "shared/grid6", ads: @ads6 %>
+  <% else %>
+    <%= render "shared/grid1", ads: @ads %>
+  <% end %>
 
 </div>
