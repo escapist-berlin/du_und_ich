@@ -435,3 +435,43 @@
   white-space: pre;
   scrollbar-width: none;
 }
+
+// *********************** GRID CLASSES ************************** //
+
+.grid-phrases-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.phrases-rows-wrapper {
+  width: 100vw;
+}
+
+.phrases-wrapper {
+  display: flex;
+  overflow-x: scroll;
+
+  p {
+    min-width: max-content;
+  }
+}
+
+// .grid-phrases-row {
+//   flex: 1 1 0;
+//   overflow-x: scroll;
+// }
+
+// .grid1-phrasebody {
+
+// }
+
+// .grid-phrases-row {
+//   flex: 1 1 0;
+//   overflow-x: scroll;
+// }
+
+// -------------------- GRID WITH 1 COLUMN -------------------- //
+// -------------------- GRID WITH 2 COLUMNS -------------------- //
+// -------------------- GRID WITH 4 COLUMNS -------------------- //
+// -------------------- GRID WITH 6 COLUMNS -------------------- //
