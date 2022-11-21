@@ -1,0 +1,37 @@
+<div class="grid-phrases-wrapper">
+
+  <%# Left column %>
+  <div id="grid2-left">
+    <div class="phrases-rows-wrapper">
+      <% phrases.each do |phrases_row| %>
+
+        <div class="phrases-grid">
+          <% phrases_row.each do |phrase| %>
+
+            <p><%= phrase.title %></p>
+
+          <% end %>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+  <%# Right column %>
+  <div id="grid2-right">
+    <div class="phrases-rows-wrapper">
+      <% phrases.each do |phrases_row| %>
+
+        <div class="phrases-grid">
+          <% phrases_row.each do |phrase| %>
+
+            <p><%= phrase.title %></p>
+
+          <% end %>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+</div>
