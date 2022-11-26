@@ -20,7 +20,46 @@
   #grid6-fifth,
   #grid6-sixth {
     border-left: 0.5px solid #261824;
+    scrollbar-width: none;
   }
+}
+
+// Remove scrollbar from chrome
+#grid2-left::-webkit-scrollbar {
+  display: none;
+}
+#grid2-right::-webkit-scrollbar {
+  display: none;
+}
+#grid4-first::-webkit-scrollbar {
+  display: none;
+}
+#grid4-second::-webkit-scrollbar {
+  display: none;
+}
+#grid4-third::-webkit-scrollbar {
+  display: none;
+}
+#grid4-fourth::-webkit-scrollbar {
+  display: none;
+}
+#grid6-first::-webkit-scrollbar {
+  display: none;
+}
+#grid6-second::-webkit-scrollbar {
+  display: none;
+}
+#grid6-third::-webkit-scrollbar {
+  display: none;
+}
+#grid6-fourth::-webkit-scrollbar {
+  display: none;
+}
+#grid6-fifth::-webkit-scrollbar {
+  display: none;
+}
+#grid6-sixth::-webkit-scrollbar {
+  display: none;
 }
 
 .phrases-rows-wrapper {
@@ -29,7 +68,7 @@
 }
 
 // All four grids have the same font-style
-.phrases-grid::-webkit-scrollbar {
+.phrases-grid::-webkit-scrollbar { // Remove scrollbar from chrome
   display: none;
 }
 
@@ -38,7 +77,6 @@
   overflow-x: scroll;
   scrollbar-width: none;
   height: 60px;
-
 
   p {
     min-width: max-content;
