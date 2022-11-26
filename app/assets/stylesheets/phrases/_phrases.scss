@@ -37,6 +37,7 @@
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
+  height: 60px;
 
 
   p {
@@ -48,5 +49,6 @@
     line-height: 13px;
     color: #261824;
     padding: 20px;
+    margin-top: 3px;
   }
 }
