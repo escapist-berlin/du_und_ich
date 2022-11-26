@@ -1,7 +1,5 @@
 // *********************** GRID CLASSES ************************** //
-body::-webkit-scrollbar {
-  display: none;
-}
+
 
 .grid-phrases-wrapper {
   display: flex;
@@ -31,16 +29,14 @@ body::-webkit-scrollbar {
 }
 
 // All four grids have the same font-style
+.phrases-grid::-webkit-scrollbar {
+  display: none;
+}
 
 .phrases-grid {
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
-  -webkit-scrollbar {
-    display: none;
-  }
-
-
 
   p {
     min-width: max-content;
