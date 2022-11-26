@@ -25,7 +25,7 @@
 
 .phrases-rows-wrapper {
   width: 100vw;
-
+  margin-top: 10px;
 }
 
 // All four grids have the same font-style
@@ -38,6 +38,7 @@
   overflow-x: scroll;
   scrollbar-width: none;
 
+
   p {
     min-width: max-content;
     font-family: 'ABC Diatype Semi-Mono Edu-Light';
@@ -46,5 +47,6 @@
     font-size: 16px;
     line-height: 13px;
     color: #261824;
+    padding: 20px;
   }
 }
