@@ -25,7 +25,7 @@
 }
 
 .grid1-adbody {
-  border: 0.5px solid #261824;
+  border-bottom: 0px solid #261824;
 
   p {
     font-family: 'ABC Diatype Semi-Mono Edu-Light';
@@ -49,10 +49,11 @@
 #grid2-right {
   flex: 1 1 0;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .grid2-adbody {
-  border: 0.5px solid #261824;
+  border-right: 0.5px solid #261824;
 
   p {
     font-family: 'ABC Diatype Semi-Mono Edu-Light';
@@ -78,10 +79,11 @@
 #grid4-fourth {
   flex: 1 1 0;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .grid4-adbody {
-  border: 0.5px solid #261824;
+  border-right: 0.5px solid #261824;
 
   p {
     font-family: 'ABC Diatype Semi-Mono Edu-Light';
@@ -109,10 +111,11 @@
 #grid6-sixth {
   flex: 1 1 0;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .grid6-adbody {
-  border: 0.5px solid #261824;
+  border-right: 0.5px solid #261824;
 
   p {
     font-family: 'ABC Diatype Semi-Mono Edu-Light';
