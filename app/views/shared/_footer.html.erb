@@ -1,40 +1,42 @@
-<div class="footer" data-refresh-content-target="footer">
-  <a href="/ads" class="link">
-    <div class="left-title">Alle Anzeigen</div>
-    <div class="bar" style="width: 87%; left: 19px;"></div>
-  </a>
-  <div class="menu">
-    <a href="/ads" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1919-1933</div>
-      <div class="bar" style="width: 133%;"></div>
+<div class="topnav">
+  <div class="footer" data-refresh-content-target="footer">
+    <a href="/ads" class="link active" >
+      <div class="left-title">Alle Anzeigen</div>
+      <div class="bar" style="width: 87%; left: 19px;"></div>
     </a>
-    <a href="/ads" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1950's</div>
-      <div class="bar" style="width: 155%;"></div>
-    </a>
-    <a href="/ads" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1970's</div>
-      <div class="bar" style="width: 155%;"></div>
-    </a>
-    <a href="/ads" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1980's</div>
-      <div class="bar" style="width: 155%;"></div>
-    </a>
-    </a>
-    <a href="/ads" class="link decade" data-action="click->refresh-content#update">
-      <div class="title">1990's</div>
-      <div class="bar" style="width: 155%;"></div>
-    </a>
-  </div>
-  <div class=right-footer>
-    <a href="/phrases" class="link">
-      <div class="right-title" style="  margin-right:-16px;">Wörter</div>
-      <div class="bar" style="width:170%;"></div>
-    </a>
-    <%= link_to about_path, class: "link" do %>
-      <div class="right-title" style="margin-right: 114px; ">über dieses Projekt</div>
-      <div class="bar" style="width: 59%;"></div>
-    <% end %>
+    <div class="menu">
+      <a href="/ads" class="link decade" data-action="click->refresh-content#update">
+        <div class="title">1919-1933</div>
+        <div class="bar" style="width: 133%;"></div>
+      </a>
+      <a href="/ads" class="link decade" data-action="click->refresh-content#update">
+        <div class="title">1950's</div>
+        <div class="bar" style="width: 155%;"></div>
+      </a>
+      <a href="/ads" class="link decade" data-action="click->refresh-content#update">
+        <div class="title">1970's</div>
+        <div class="bar" style="width: 155%;"></div>
+      </a>
+      <a href="/ads" class="link decade" data-action="click->refresh-content#update">
+        <div class="title">1980's</div>
+        <div class="bar" style="width: 155%;"></div>
+      </a>
+      </a>
+      <a href="/ads" class="link decade" data-action="click->refresh-content#update">
+        <div class="title">1990's</div>
+        <div class="bar" style="width: 155%;"></div>
+      </a>
+    </div>
+    <div class=right-footer>
+      <a href="/phrases" class="link">
+        <div class="right-title" style="  margin-right:-16px;">Wörter</div>
+        <div class="bar" style="width:155%;"></div>
+      </a>
+      <%= link_to about_path, class: "link" do %>
+        <div class="right-title" style="margin-right: 114px; ">über dieses Projekt</div>
+        <div class="bar" style="width: 59%;"></div>
+      <% end %>
+    </div>
   </div>
 </div>
 

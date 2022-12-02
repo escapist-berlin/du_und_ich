@@ -51,6 +51,7 @@
   padding-left: 25px;
 }
 
+
 .right-title{
   font-family: 'ABC Diatype Mono Variable Edu';
   -webkit-font-smoothing: antialiased !important;
@@ -87,6 +88,7 @@
   margin-left: 159px;
 }
 
+
 .link {
   display: inline-block;
   padding: 15px 0;
@@ -118,8 +120,36 @@
       color: #261824;
     }
   }
+
 }
 
 a:hover {
   color:#261824;
 }
+
+
+
+// testing to make underline bar stick
+
+// .link::before {
+//   position: absolute;
+// top: 50%;
+// left: 50%;
+// width: 100%;
+// height: 100%;
+// min-height: 48px;
+// content: "";
+// transform: translateX(-50%) translateY(-50%);
+// }
+
+// .link::after {
+//   position: absolute;
+// right: 50%;
+// bottom: calc(50% - 25px);
+// width: 100%;
+// height: 2px;
+// content: "";
+// background: var(--color-primer-border-active);
+// border-radius: 6px;
+// transform: translate(50%, -50%);
+// }
