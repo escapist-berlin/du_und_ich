@@ -131,6 +131,16 @@ a:hover {
 
 // testing to make underline bar stick
 
+/* Underline the active primary menu link */
+// .topnav >a:before {
+//   content:"";
+//   background: #2ACCB3; /* Change color value here as desired */
+//   width:100%;
+//   height:5px; /* Change line height here as desired */
+//   position:absolute;
+//   left:0; bottom:0;
+// }
+
 // .link::before {
 //   position: absolute;
 // top: 50%;
