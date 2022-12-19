@@ -2,11 +2,13 @@
   <% decade = params[:decade] %>
 <% end %>
 
+<% url = request.fullpath %>
+
 <div class="topnav">
   <div class="footer" data-refresh-content-target="footer">
     <a href="/ads" class="link active" >
       <div class="left-title">Alle Anzeigen</div>
-      <div class="bar" style="width: 87%; left: 19px;"></div>
+      <div class="bar <%= "underlined" if url == "/ads" %>" style="width: 87%; left: 19px;"></div>
     </a>
     <div class="menu">
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
@@ -34,11 +36,11 @@
     <div class=right-footer>
       <a href="/phrases" class="link">
         <div class="right-title" style="  margin-right:-16px;">Schlagwörter</div>
-        <div class="bar" style="width:190%%;"></div>
+        <div class="bar <%= "underlined" if url == "/phrases" %>" style="width:190%%;"></div>
       </a>
       <%= link_to about_path, class: "link" do %>
         <div class="right-title" style="margin-right: 114px; ">über dieses Projekt</div>
-        <div class="bar" style="width: 59%;"></div>
+        <div class="bar <%= "underlined" if url == "/about" %>" style="width: 59%;"></div>
       <% end %>
     </div>
   </div>
