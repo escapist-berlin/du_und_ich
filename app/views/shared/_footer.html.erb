@@ -1,3 +1,7 @@
+<% if params[:decade].present? %>
+  <% decade = params[:decade] %>
+<% end %>
+
 <div class="topnav">
   <div class="footer" data-refresh-content-target="footer">
     <a href="/ads" class="link active" >
@@ -7,24 +11,24 @@
     <div class="menu">
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
         <div class="title">1919-1933</div>
-        <div class="bar" style="width: 133%;"></div>
+        <div class="bar <%= "underline" if decade == "1919-1933" %>" style="width: 133%;"></div>
       </a>
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
         <div class="title">1950's</div>
-        <div class="bar" style="width: 155%;"></div>
+        <div class="bar <%= "underline" if decade == "1950's" %>" style="width: 155%;"></div>
       </a>
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
         <div class="title">1970's</div>
-        <div class="bar" style="width: 155%;"></div>
+        <div class="bar <%= "underline" if decade == "1970's" %>" style="width: 155%;"></div>
       </a>
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
         <div class="title">1980's</div>
-        <div class="bar" style="width: 155%;"></div>
+        <div class="bar <%= "underline" if decade == "1980's" %>" style="width: 155%;"></div>
       </a>
       </a>
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
         <div class="title">1990's</div>
-        <div class="bar" style="width: 155%;"></div>
+        <div class="bar <%= "underline" if decade == "1990's" %>" style="width: 155%;"></div>
       </a>
     </div>
     <div class=right-footer>
