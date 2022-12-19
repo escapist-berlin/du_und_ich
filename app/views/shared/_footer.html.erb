@@ -39,11 +39,11 @@
     <div class=right-footer>
       <a href="/phrases" class="link">
         <div class="right-title" style="  margin-right:-16px;">Schlagwörter</div>
-        <div class="bar <%= "underlined" if url == "/phrases" %>" style="width:124%;"></div>
+        <div class="bar <%= "underlined" if (url.include? "/phrases") %>" style="width:124%;"></div>
       </a>
       <%= link_to about_path, class: "link" do %>
         <div class="right-title" style="margin-right: 114px; ">über dieses Projekt</div>
-        <div class="bar <%= "underlined" if url == "/about" %>" style="width: 59%;"></div>
+        <div class="bar <%= "underlined" if (url.include? "/about") %>" style="width: 59%;"></div>
       <% end %>
     </div>
   </div>
