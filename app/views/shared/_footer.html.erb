@@ -2,13 +2,16 @@
   <% decade = params[:decade] %>
 <% end %>
 
+<%# Getting the current url %>
 <% url = request.fullpath %>
+<%# Checking if there is no decade query %>
+<% no_decade = params[:decade].present? == false %>
 
 <div class="topnav">
   <div class="footer" data-refresh-content-target="footer">
     <a href="/ads" class="link" >
       <div class="left-title">Alle Anzeigen</div>
-      <div class="bar <%= "underlined" if url == "/ads" %>" style="width: 87%; left: 19px;"></div>
+      <div class="bar <%= "underlined" if (url.include? "/ads") && (no_decade) %>" style="width: 87%; left: 19px;"></div>
     </a>
     <div class="menu">
       <a href="/ads" class="link decade" data-action="click->refresh-content#update">
